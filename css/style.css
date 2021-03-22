@@ -1,3 +1,64 @@
+/* Debug */
+
+footer {
+    height: 100px;
+    background-color: green;
+}
+
+
+/* /Debug */
+
+
+/* Common */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    font-family: 'Dosis', sans-serif;
     background-color: #ADD8E6;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+
+/* Header */
+
+header {
+    line-height: 150px;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-size: 64px;
+}
+
+
+/* Main */
+
+main {
+    padding: 0 5% 2%;
+}
+
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.box-carte {
+    float: left;
+    height: 265px;
+    width: calc(100% / 4 - 20px);
+    margin: 10px;
+    border-radius: 15px;
+    background-color: white;
 }
