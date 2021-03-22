@@ -18,7 +18,7 @@ footer {
 }
 
 body {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Nerko One', cursive;
     background-color: #ADD8E6;
 }
 
@@ -48,17 +48,41 @@ main {
     padding: 0 5% 2%;
 }
 
+.box-carte {
+    float: left;
+    overflow: hidden;
+    height: 265px;
+    line-height: 265px;
+    width: calc(100% / 4 - 20px);
+    margin: 10px;
+    border-radius: 15px;
+    background: url(../img/pattern.png) center;
+    background-size: contain;
+}
+
+.image-open {
+    background: white;
+}
+
+.image-open>img {
+    position: relative;
+    bottom: 10px;
+    width: 80%;
+    margin-left: 10%;
+    vertical-align: middle;
+}
+
+h2 {
+    position: relative;
+    bottom: 1.5em;
+    font-size: 36px;
+    line-height: normal;
+    text-align: center;
+    color: #E61986;
+}
+
 main::after {
     content: "";
     display: table;
     clear: both;
-}
-
-.box-carte {
-    float: left;
-    height: 265px;
-    width: calc(100% / 4 - 20px);
-    margin: 10px;
-    border-radius: 15px;
-    background-color: white;
 }
