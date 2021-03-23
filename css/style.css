@@ -55,7 +55,6 @@ main {
 .box-carte {
     float: left;
     overflow: hidden;
-    height: 265px;
     line-height: 265px;
     width: calc(100% / 4 - 20px);
     margin: 10px;
@@ -65,12 +64,8 @@ main {
 }
 
 .image-open {
-    display: none;
+    visibility: hidden;
     background: white;
-}
-
-.open {
-    display: block;
 }
 
 .image-open>img {
@@ -87,8 +82,9 @@ main::after {
     clear: both;
 }
 
-.box-carte:hover .image-open {
-    display: block;
+.box-carte:hover .image-open,
+.open {
+    visibility: visible;
 }
 
 
